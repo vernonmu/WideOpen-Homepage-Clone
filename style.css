@@ -1,14 +1,67 @@
-
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+/*
 * {
   border: 2px red solid;
-}
+}*/
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'helvetica', sans-serif;
   margin:0px;
   }
 
+  header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;;
+    align-items: center;
+  }
+
+
+  header nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-transition: all, 0.25s;
+    -moz-transition: all, 0.25s;
+    -ms-transition: all, 0.25s;
+    -o-transition: all, 0.25s;
+    transition: all, 0.25s;
+  }
+
+
+  header nav ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /*justify-content: flex-start;
+    align-items: flex-start;*/
+
+
+  }
+  header nav ul li {
+    -webkit-box-flex: 0 1 auto;
+    -moz-box-flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    padding:7px;
+    font-size:16px;
+
+  }
 
 
 .jumbo {
@@ -17,7 +70,9 @@ body {
   background-size: cover;
   background-position: center;
   /*width:100%;*/
-  height:500px;
+  height:650px;
+  font-family: 'oswald';
+
 }
 
 
@@ -47,6 +102,7 @@ button {
 
 .jumbo button {
   font-size:2rem;
+  font-weight:300;
   color:#333;
 }
 
@@ -61,63 +117,93 @@ button:hover {
   text-align: left;
   padding:5px;
   line-height: .75;
+  text-align: center;
 }
 
 .subtext {
+  margin-top:2%;
   padding-top:5px;
   font-size:2rem;
   background-color:rgba(255,255,255,0.3);
   text-align:center;
 }
 
-nav ul li {display:inline-block;list-style: none;background-color:rgba(0,0,0,0.3);}
+nav ul li {display:inline-block;list-style: none;background-color:rgba(0,0,0,0.3);margin:0px 2px;font-size:16px;letter-spacing: 5px;}
 nav ul li a {font-weight: 700;color:white;text-decoration: none;}
+nav ul li:hover {color:white;}
+nav ul li a:hover {color:white;text-decoration:none;border-bottom:4px solid white;}
 
-
-header nav {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  -webkit-transition: all, 0.25s;
-  -moz-transition: all, 0.25s;
-  -ms-transition: all, 0.25s;
-  -o-transition: all, 0.25s;
-  transition: all, 0.25s;
+.bg-full {
+  background-color:#f0f0f0;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
-header {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+.brian-col {
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  text-align: center;
+  font-size:24px;
+  line-height: 36px;
+  color:#6A787C;
+  padding:5% 10%;
+  margin:auto 10%;
+  font-weight:400;
+}
+
+.shea-col {
+  display:flex;
   flex-flow: row wrap;
-  justify-content: space-around;;
-  align-items: center;
+  text-align: center;
+  font-size:18px;
+  line-height: 1.6;
+  color:#6A787C;
+  padding:5% 0;
+  margin:auto 10%;
+  font-weight:300;
+
+  justify-content: space-around;
 }
 
-header nav ul {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -moz-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-
+.shea-col-col {
+  max-width:27%;
+  margin:0px 10px;
+  /*max-width:400px;*/
+  min-width:200px;
 
 }
-header nav ul li {
-  -webkit-box-flex: 0 1 auto;
-  -moz-box-flex: 0 1 auto;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  padding:15px;
 
+.shea-title {
+  font-size:42px;
+  font-weight:200;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'oswald';
+  margin:50px;
+  line-height: 1.5;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.pane-col {
+  display:flex;
+  flex-flow: column;
+  text-align: center;
+
+}
+
+.pane-col button {
+  align-self: center;
+  width:500px;
+  padding:20px 35px;
+  font-size:2rem;
+  font-weight:300;
+  color:#333;
+  margin-bottom:45px;
 }
 
 
