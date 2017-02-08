@@ -1,16 +1,128 @@
-header {
 
+* {
+  border: 2px red solid;
+}
+
+
+body {
+  font-family: 'helvetica', sans-serif;
+  margin:0px;
+  }
+
+
+
+.jumbo {
   background-image: url('https://source.unsplash.com/random');
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
-  width:100%;
+  /*width:100%;*/
   height:500px;
+}
+
+
+.jumbo-text {
+  font-size:25px;
+  color:white;
+  padding-top:100px;
+  margin:0 auto;
+  width:60%;
+  font-size: 2rem;
+
+  padding-left:10px;
+  text-align: center;
 
 }
 
-.logo {
-  font-weight:bold;
+
+button {
+  margin-top:35px;
+  border-radius: 45px;
+  padding:10px 20%;
+  background-color:#D9FFB2;
+  font-size:.55em;
+  box-shadow: 0;
+  border:0px;
+}
+
+.jumbo button {
+  font-size:2rem;
+  color:#333;
+}
+
+button:hover {
+  background-color:#82996a;
   color:white;
-  padding:30px;
+}
+
+.jumbo-big {
+  font-size: 12vw;
+  text-transform: uppercase;
+  text-align: left;
+  padding:5px;
+  line-height: .75;
+}
+
+.subtext {
+  padding-top:5px;
+  font-size:2rem;
+  background-color:rgba(255,255,255,0.3);
+  text-align:center;
+}
+
+nav ul li {display:inline-block;list-style: none;background-color:rgba(0,0,0,0.3);}
+nav ul li a {font-weight: 700;color:white;text-decoration: none;}
+
+
+header nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-transition: all, 0.25s;
+  -moz-transition: all, 0.25s;
+  -ms-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  transition: all, 0.25s;
+}
+
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;;
+  align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+
+}
+header nav ul li {
+  -webkit-box-flex: 0 1 auto;
+  -moz-box-flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  padding:15px;
+
+}
+
+
+@media all and (max-width: 600px) {
+
+
+
 }
