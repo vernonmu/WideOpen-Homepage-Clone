@@ -15,7 +15,8 @@ body {
   }
 
 .logo {
-  margin:30px;background:black; padding:20px;width:30px;
+  background-image: url('http://wideopentech.com/themes/wot-2013-gm/_/img/title_wideopentech.png') top left;
+  width:200px; padding:20px;width:30px;
 }
 
 header {
@@ -44,8 +45,22 @@ header {
     transition: all, 0.25s;
   }
 
+.hidefool {
+    background-color: white !important;
+    color: black !important;
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
 
-  header nav ul {
+  }
+
+.hfcolor {
+  color:black;
+}
+
+
+header nav ul {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -57,10 +72,9 @@ header {
     flex-flow: row wrap;
     /*justify-content: flex-start;
     align-items: flex-start;*/
-
-
   }
-  header nav ul li {
+
+header nav ul li {
     -webkit-box-flex: 0 1 auto;
     -moz-box-flex: 0 1 auto;
     -webkit-flex: 0 1 auto;
@@ -79,10 +93,10 @@ header {
   font-size:3rem; position:relative;left:15%; text-transform:uppercase;text-align:left;
 }
 .jumbo {
-  background-image: url('https://source.unsplash.com/random');
+  background-image: url('http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg');
   background-repeat:no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   /*width:100%;*/
   height:600px;
   font-family: 'oswald';
@@ -107,7 +121,7 @@ header {
 button {
   margin-top:55px;
   border-radius: 45px;
-  background-color:#D9FFB2;
+  background-color:#C8E23A;
   box-shadow: 0;
   border:0px;
   font-size:2rem;
@@ -143,10 +157,18 @@ button:hover {
   text-align:center;
 }
 
-nav ul li {display:inline-block;list-style: none;background-color:rgba(0,0,0,0.3);margin:0px 2px;font-size:16px;letter-spacing: 5px;}
-nav ul li a {font-weight: 700;color:white;text-decoration: none;}
-nav ul li:hover {color:white;}
-nav ul li a:hover {color:white;text-decoration:none;border-bottom:4px solid white;}
+nav ul li {
+  display:inline-block;
+  list-style: none;
+  margin:0px 2px;
+  font-size:16px;
+  letter-spacing: 5px;}
+nav ul li a {
+  font-weight: 400;
+  color:white;
+  text-decoration: none;}
+/*nav ul li:hover {color:white;}*/
+nav ul li a:hover {color:white;text-decoration:none;border-bottom:4px solid #C8E23A;}
 
 .bg-full {
   background-color:#f0f0f0;
@@ -174,11 +196,6 @@ nav ul li a:hover {color:white;text-decoration:none;border-bottom:4px solid whit
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  /*-webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;*/
-
   text-align: center;
   font-size:18px;
   line-height: 1.6;
@@ -231,24 +248,13 @@ margin: 5px 0 5px;
 }
 
 
-/*
-.pane-col div {
-  background-color:white;
-  margin:15px;
-  padding:20px;
-  font-size:1.5em;
-  /*max-width:300px;
-}*/
+
 
 .pane-col .pane-row {
   display:flex;
   flex-flow: row wrap;
   justify-content: space-around;
   background-color: transparent !important;
-  /*margin:auto auto;*/
-  /*width:100%;*/
-
-  /*text-align:left;*/
   margin: auto auto;
 }
 
@@ -293,17 +299,25 @@ margin: 5px 0 5px;
 
 .locations {
   display:flex;
-  width:100%;
-  justify-content: space between;
+  flex-flow: row wrap;
+  justify-content:space-between;
   text-align: center;
 }
 
+.loc-1, .loc-2 {
+  width:50%;
+  background-position: top center;
+  padding:11% 0;
+}
+
 .loc-1 {
-  background-color:green;
+background-image: url('https://source.unsplash.com/category/nature/1600x900');
+background-position: center center;
 }
 
 .loc-2 {
-  background-color:red;
+background-image: url('https://source.unsplash.com/category/buildings/1600x900');
+background-position: center center;
 }
 
 .lets-talk-container {
@@ -321,10 +335,10 @@ margin: 5px 0 5px;
 }
 
 footer {
-  background-color:#222;
-  padding:50px;
-  color:white;
-  text-align: center;
+  background-color:#f0f0f0;
+  padding:20px;
+  color:#333;
+  text-align: left;
 }
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
@@ -399,6 +413,21 @@ ul.topnav li.icon {display: none;}
 
 .shea-col-col {
   margin:auto auto;
+}
+
+.loc-1, .loc-2 {
+  width:100%;
+  padding:20%;
+}
+
+.lets-talk-container {
+  flex-flow: column;
+
+}
+
+.lets-talk {
+  text-align: center;
+  margin-top:10%;
 }
 
 

@@ -34,6 +34,7 @@
     <header>
 
       <div class="logo">
+        <img src="http://wideopentech.com/themes/wot-2013-gm/_/img/title_wideopentech.png">
       </div>
 
 
@@ -66,7 +67,7 @@
           <span style="color:orange;">
             Solutions
           </span>
-          & Bright <span style="color:lime;">Ideas</span>
+          & Bright <span style="color:#C8E23A">Ideas</span>
         </div>
         <div style="text-align:center;">
           <button>
@@ -176,7 +177,7 @@ and makes your life easier.</p>
 <div class="lets-talk-container">
   <div class="lets-talk">
     <p>
-      Lets talk about how<br> Wide Baby Co. can help your business
+      Lets talk about how Wide Baby Co. can help your business
     </p>
   </div>
     <div>
@@ -218,6 +219,26 @@ function myFunction() {
       x.className = "topnav";
   }
 }
+
+$(window).scroll(function(){
+  var top = $(window).scrollTop();
+      if (top < 10) {
+        $("header").removeClass('hidefool');
+        $("nav ul li a").removeClass('hfcolor');
+        $("nav ul li a:hover").removeClass('hfcolor');
+      }
+
+      if (top > 10) {
+        $("header").addClass('hidefool');
+        $("nav ul li a").addClass('hfcolor');
+        $("nav ul li a:hover").addClass('hfcolor');
+      }
+
+});
+
+
 </script>
+
+
   </body>
 </html>
